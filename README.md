@@ -1,4 +1,4 @@
-# False Positive Viewer
+# CNN Classification Viewer
 Dash plotly server for visualizing the decision boundrary of a DenseNet (or general CNN with adapdation) classifier and to easily visualize miss-classified pathes by the network. This aim of this tool is to help find tweaks on the input data resulting in better classification performance.
 
 ## Requirements
@@ -16,7 +16,7 @@ Upon first exection a csv file of the embedding will be created.
 By setting the flag --load_from_file the embedding will be read from the csv file and no embedding and classification will be done.
  
  ~~~~
- usage: _fd_fp_server_w_hooks2.py [-h] [--load_from_file]
+ usage: cnn_classification_viewer.py [-h] [--load_from_file]
                                  [--target_class TARGET_CLASS] [--port PORT]
                                  database filename model
 
