@@ -8,6 +8,7 @@ __author__ = "Cédric Walker"
 # In[5]:
 
 import re
+import colorsys
 import matplotlib.cm
 import argparse
 import flask
@@ -328,8 +329,8 @@ def display_selected_data(selectedData):
         frame = embedding_a[embedding_a['index'].isin(indices)]
         conf_freq = frame['Confusion'].value_counts()
         df2 = pd.DataFrame({'Confusion': conf_freq._index, 'Label': conf_freq.values})
-        df2['perc'] = df2['Label'] / df2['Label'].sum() *100
-        df2['perc'] = df2['Percentage'].apply(lambda a: '%.1f%%' % a)
+        df2['Percentage'] = df2['Label'] / df2['Label'].sum() *100
+        df2['Percentage'] = df2['Percentage'].apply(lambda a: '%.1f%%' % a)
         text = "Pred:\n" + frame['Prediction'].value_counts().to_string() + \
             "\nLabel:\n" + frame['Label'].value_counts().to_string() + \
             "\nConf:\n" + df2.to_string()
