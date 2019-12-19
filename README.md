@@ -42,7 +42,10 @@ optional arguments:
  
  The example was trained according to the blog post from Andrew Janowczyk: http://www.andrewjanowczyk.com/digital-pathology-classification-using-pytorch-densenet/.
  
- The example database consists of a smaller version of the validation dataset used in training the classifier.
+ The example database consists of a smaller version of the validation dataset used in training the classifier because of github restrictions.
+ 
+ ## Demo
+ ![CNN Classification Viewer Demo](demo/demo.gif)
  
  ## Future Plans
  * Upload example DenseNet and Database
