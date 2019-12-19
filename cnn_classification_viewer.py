@@ -68,7 +68,7 @@ app = dash.Dash(__name__, server=server)
 def color_pallete(n):
     num = int(min(np.ceil(5/10), 2)*10)
     colors = matplotlib.cm.get_cmap(f'tab{num}').colors
-    if num > 20:
+    if n > 20:
         return ['#%02x%02x%02x' % tuple(
         np.array(np.array(colorsys.hsv_to_rgb(i,0.613,246 ))*255,
                  dtype=np.uint8)) for i in np.linspace(0, 1, n+1)][:-1]
