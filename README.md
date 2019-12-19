@@ -36,8 +36,13 @@ optional arguments:
                         all fashion
   --port PORT, -p PORT  Server Port
   ~~~~
-
+## Example
+ run example as  `python cnn_classification_viewer.py ./lymphoma.pytable ./filename.csv ./lymphoma_densenet_best_model.pth`.
+ After first run is completed. It can be reloaded faster by using `python cnn_classification_viewer.py -l ./lymphoma.pytable ./filename.csv ./lymphoma_densenet_best_model.pth`
  
+ The example was trained according to the blog post from Andrew Janowczyk: http://www.andrewjanowczyk.com/digital-pathology-classification-using-pytorch-densenet/.
+ 
+ The example database consists of a smaller version of the validation dataset used in training the classifier.
  
  ## Future Plans
  * Upload example DenseNet and Database
