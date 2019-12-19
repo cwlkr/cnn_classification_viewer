@@ -37,7 +37,8 @@ optional arguments:
   --port PORT, -p PORT  Server Port
   ~~~~
 
- 
+ run example as  `cnn_classification_viewer.py ./lymphoma.pytable ./filename.csv ./lymphoma_densenet_best_model.pth`.
+ After first run is completed. It can be reloaded faster by using `cnn_classification_viewer.py -l ./lymphoma.pytable ./filename.csv ./lymphoma_densenet_best_model.pth`
  
  ## Future Plans
  * Upload example DenseNet and Database
